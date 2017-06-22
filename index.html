@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
+    <title>Tiago´s calculator</title>
+</head>
+<body>
+
+    <div class="calculator">
+   <form name="Calculator" action="">
+<input class="screen" type="text" name="Input"/><br>
+<input class="number" type="button" name="plus" value=" + " onclick="updateString(' + ')">
+<input class="number" type="button" name="minus" value=" - " onclick="updateString(' - ')">
+<input class="number" type="button" name="multiply" value=" * " onclick="updateString(' * ')">
+<input class="number" type="button" name="divide" value=" / " onclick="updateString(' / ')">
+<input class="number" type="button" name="0" value="0" onclick="updateString(' 0 ')">
+<input class="number" type="button" name="1" value="1" onclick="updateString(' 1 ')">
+<input class="number" type="button" name="2" value="2" onclick="updateString(' 2 ')">
+<input class="number" type="button" name="3" value="3" onclick="updateString(' 3 ')">
+<input class="number" type="button" name="4" value="4" onclick="updateString(' 4 ')">
+<input class="number" type="button" name="5" value="5" onclick="updateString(' 5 ')">
+<input class="number" type="button" name="6" value="6" onclick="updateString(' 6 ')">
+<input class="number" type="button" name="7" value="7" onclick="updateString(' 7 ')">
+<input class="number" type="button" name="8" value="8" onclick="updateString(' 8 ')">
+<input class="number" type="button" name="9" value="9" onclick="updateString(' 9 ')">
+<input class="number" type="button" name="dot" value="dot" onclick="updateString(' . ')">
+<input class="number" type="button" name="clear" value="clear" onclick="document.Calculator.Input.value=''; inputString= ''">
+<input class="number" type="button" name="calc" value=" = " onclick="document.Calculator.Input.value=eval(inputString); inputString=''">
+
+   </form>
+</div> 
+</body>
+</html>
